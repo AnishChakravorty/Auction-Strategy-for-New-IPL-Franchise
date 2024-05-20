@@ -95,7 +95,8 @@ GROUP BY city;
 
 ### Creating and Analyzing Deliveries_v02 Table
 
-```CREATE TABLE deliveries_v02 AS
+```sql
+CREATE TABLE deliveries_v02 AS
 SELECT match_id, inning, batting_team, bowling_team, over, ball, batsman, bowler, wide_runs, bye_runs, 
 legbye_runs, noball_runs, penalty_runs, batsman_runs, extra_runs, total_runs, player_dismissed, dismissal_kind, fielder
 FROM deliveries;
@@ -103,7 +104,8 @@ FROM deliveries;
 
 ### Boundary and Dot Ball Analysis
 
-```SELECT batting_team, COUNT(*) AS boundary_count
+```sql
+SELECT batting_team, COUNT(*) AS boundary_count
 FROM deliveries_v02
 WHERE batsman_runs = 4 OR batsman_runs = 6
 GROUP BY batting_team;
@@ -116,7 +118,8 @@ GROUP BY bowling_team;
 
 ### Dismissal Analysis
 
-```SELECT dismissal_kind, COUNT(*) AS dismissal_count
+```sql
+SELECT dismissal_kind, COUNT(*) AS dismissal_count
 FROM deliveries_v02
 WHERE player_dismissed IS NOT NULL
 GROUP BY dismissal_kind;
@@ -124,7 +127,8 @@ GROUP BY dismissal_kind;
 
 ### Extra Runs Conceded Analysis
 
-```SELECT bowling_team, SUM(extra_runs) AS total_extras
+```sql
+SELECT bowling_team, SUM(extra_runs) AS total_extras
 FROM deliveries_v02
 GROUP BY bowling_team;
 ```
