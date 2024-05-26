@@ -3,7 +3,7 @@ To develop an effective auction strategy for a new IPL franchise by analyzing pa
 
 ## Table of Contents
 
-1. [Project Overview](#project-overview)
+1. [Project Title](#project-title)
 2. [Objective](#objective)
 3. [Background](#background)
 4. [Data Collection and Preprocessing](#data-collection-and-preprocessing)
@@ -17,9 +17,9 @@ To develop an effective auction strategy for a new IPL franchise by analyzing pa
 12. [Conclusion](#conclusion)
 13. [Appendices](#appendices)
     
-## Project Overview
+## Project Title
 
-**Project Title:** Developing Auction Strategy for New IPL Franchise
+Developing Auction Strategy for New IPL Franchise
 
 ## Objective
 
